@@ -77,12 +77,14 @@
     <title>Php Google Faq</title>
 </head>
 <body>
-    <?php 
-        foreach($faq as $faqs) {
-            echo '<h1>' .$faqs['domanda']. '</h1>';
+    <div class="container">
+        <?php 
+            foreach($faq as $faqs) {
+                echo '<h1>' .$faqs['domanda']. '</h1>';
 
-            echo '<p class="paragraph">' .$faqs['risposta']. '</p>';
-        }
-        ?>
+                echo '<p class="paragraph">' .$faqs['risposta']. '</p>';
+            }
+            ?>
+    </div>
 </body>
 </html>
